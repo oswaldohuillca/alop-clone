@@ -45,35 +45,77 @@ const slides = [
         de diferentes estilos y temas, para darle vida, color y onda a tus paredes.
       </p>
       <div class="flex flex-col md:flex-row mt-20 gap-5">
-        <aside>
+        <aside class="">
+          <div class=" flex flex-col gap-4 top-28 sticky">
+            <TextField placeholder="Buscar..." />
 
-          <TextField placeholder="Buscar..." />
+            <div class="overflow-x-auto pb-2">
+              <ul class="flex md:flex-col gap-4  sticky top-4">
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Abstracto
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Cosina
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Frases
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Gif Cards
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Abstracto
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Cosina
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Frases
+                  </Chip>
+                </li>
+                <li>
+                  <Chip href="?categoria=abstracto">
+                    Gif Cards
+                  </Chip>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-          <ul class="flex flex-col gap-4 mt-6">
-            <li>
-              <Chip href="?categoria=abstracto">
-                Abstracto
-              </Chip>
-            </li>
-            <li>
-              <Chip href="?categoria=abstracto">
-                Cosina
-              </Chip>
-            </li>
-            <li>
-              <Chip href="?categoria=abstracto">
-                Frases
-              </Chip>
-            </li>
-            <li>
-              <Chip href="?categoria=abstracto">
-                Gif Cards
-              </Chip>
-            </li>
-          </ul>
         </aside>
 
         <main class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/600x800" alt="">
+          </figure>
           <figure>
             <img src="https://placehold.co/600x800" alt="">
           </figure>

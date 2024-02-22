@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'vue3-carousel-nuxt',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/google-fonts',
   ],
   plugins: [
     '~/plugins/preline.client.ts',
@@ -23,5 +24,13 @@ export default defineNuxtConfig({
       'xxl': 1536,
       '2xl': 1536
     },
+  },
+  googleFonts: {
+    families: {
+      Figtree: {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800],
+      }
+    },
+    inject: true
   }
 })

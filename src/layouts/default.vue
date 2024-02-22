@@ -1,5 +1,5 @@
 <template>
-  <header class="flex z-50 w-full bg-white/10 backdrop-blur-sm text-xl py-4 sticky md:fixed">
+  <header class="flex z-50 w-full bg-white/10 backdrop-blur-sm text-xl py-4 sticky top-0 md:fixed">
     <nav class="container mx-auto px-4 flex items-center justify-between" aria-label="Global">
       <div class="flex items-center justify-between">
         <a class="flex-none text-xl font-semibold text-primary-950 " href="#">Alop</a>
@@ -39,3 +39,10 @@
     <slot />
   </main>
 </template>
+
+
+<style>
+html {
+  font-family: 'Figtree', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+</style>
