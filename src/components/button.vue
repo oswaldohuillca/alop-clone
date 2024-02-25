@@ -14,15 +14,16 @@ withDefaults(defineProps<Props>(), {
 </script>
   
 <template>
-  <component :is="component" :class="[
+  <component :is="component" v-bind="$attrs" :class="[
+    $attrs.class,
     'btn',
     {
       'btn-filled': variant === 'filled',
       'btn-outline': variant === 'outline',
       'btn-link': variant === 'link'
-    }
+    },
 
-  ]" v-bind="$attrs">
+  ]">
     <slot />
   </component>
 </template>

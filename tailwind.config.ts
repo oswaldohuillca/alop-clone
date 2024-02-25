@@ -1,14 +1,13 @@
+import type { Config } from 'tailwindcss'
+import { addDynamicIconSelectors } from '@iconify/tailwind'
+
 /** @type {import('tailwindcss').Config} */
-export default {
+export default <Partial<Config>>{
   darkMode: 'class',
-  content: [
-    './node_modules/preline/preline.js'
-  ],
   theme: {
     extend: {
-      colors: ({ colors }) => ({
-        ...colors,
-        'primary': {
+      colors: {
+        primary: {
           '50': '#f6f6f6',
           '100': '#e7e7e7',
           '200': '#d1d1d1',
@@ -21,7 +20,7 @@ export default {
           '900': '#3d3d3d',
           '950': '#0f0f0f',
         }
-      })
+      }
     },
     container: {
       padding: {
@@ -34,7 +33,7 @@ export default {
     }
   },
   plugins: [
-    require('preline/plugin')
+    addDynamicIconSelectors()
   ],
 }
 

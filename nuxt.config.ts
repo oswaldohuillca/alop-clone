@@ -1,16 +1,18 @@
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxt/ui',
+    // '@nuxtjs/tailwindcss',
     'vue3-carousel-nuxt',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
   ],
-  plugins: [
-    '~/plugins/preline.client.ts',
-  ],
+  // plugins: [
+  //   '~/plugins/preline.client.ts',
+  // ],
   image: {
     format: ['webp', 'avif', 'jpg', 'png'],
     inject: true,

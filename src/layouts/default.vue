@@ -19,7 +19,13 @@
             Contáctanos
           </a>
         </div>
-        <div>
+        <div class="flex items-center">
+          <UButton icon="icon-[solar--user-bold-duotone]" size="sm" color="primary" variant="solid" />
+
+          <Button class="text-xl">
+            <i class="icon-[solar--user-bold-duotone]"></i>
+          </Button>
+
           <Button id="carrito">
             Carrito
             <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">

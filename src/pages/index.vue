@@ -17,6 +17,7 @@ const slides = [
   'banner-marcos.webp'
 ]
 
+const pb = usePocketBase()
 
 
 </script>
