@@ -48,7 +48,7 @@ const pb = usePocketBase()
       <div class="flex flex-col md:flex-row mt-20 gap-5">
         <aside class="">
           <div class=" flex flex-col gap-4 top-28 sticky">
-            <TextField placeholder="Buscar..." />
+            <UInput icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search..." size="lg" />
 
             <div class="overflow-x-auto pb-2">
               <ul class="flex md:flex-col gap-4  sticky top-4">

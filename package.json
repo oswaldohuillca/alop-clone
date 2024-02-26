@@ -18,10 +18,8 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.186",
-    "@iconify/tailwind": "^0.1.4",
     "@nuxt/ui": "^2.14.1",
     "@nuxtjs/google-fonts": "latest",
-    "@nuxtjs/tailwindcss": "latest",
     "vue3-carousel-nuxt": "latest"
   }
 }

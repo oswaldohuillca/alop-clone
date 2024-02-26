@@ -1,3 +1,4 @@
+import { getIconCollections } from '@egoist/tailwindcss-icons'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -5,7 +6,6 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   modules: [
     '@nuxt/ui',
-    // '@nuxtjs/tailwindcss',
     'vue3-carousel-nuxt',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
@@ -34,5 +34,18 @@ export default defineNuxtConfig({
       }
     },
     inject: true
+  },
+  tailwindcss: {
+    configPath: './tailwind.config.ts'
+  },
+  colorMode: {
+    preference: 'light'
+  },
+  ui: {
+    icons: {
+      collections: {
+        ...getIconCollections('all')
+      }
+    }
   }
 })

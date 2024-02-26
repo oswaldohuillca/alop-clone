@@ -1,11 +1,14 @@
+
+
+
 <template>
-  <header class="flex z-50 w-full bg-white/10 backdrop-blur-sm text-xl py-4 sticky top-0 md:fixed">
+  <header class="flex z-50 w-full bg-white/10 backdrop-blur-sm text-xl py-4 sticky top-0 md:fixed dark:bg-alop-950/10">
     <nav class="container mx-auto px-4 flex items-center justify-between" aria-label="Global">
       <div class="flex items-center justify-between">
         <a class="flex-none text-xl font-semibold text-primary-950 " href="#">Alop</a>
       </div>
       <div id="navbar-collapse-with-animation" class="flex gap-5">
-        <div class="hidden md:flex  gap-5 mt-5 text-base sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+        <div class="hidden md:flex  gap-5 mt-5 text-base sm:items-center sm:justify-end sm:mt-0 sm:ps-5 text-alop-950">
           <a class="font-bold" href="#" aria-current="page">
             Tienda
           </a>
@@ -19,12 +22,10 @@
             Contáctanos
           </a>
         </div>
-        <div class="flex items-center">
-          <UButton icon="icon-[solar--user-bold-duotone]" size="sm" color="primary" variant="solid" />
+        <div class="flex items-center gap-2">
+          <ThemeSelect />
 
-          <Button class="text-xl">
-            <i class="icon-[solar--user-bold-duotone]"></i>
-          </Button>
+          <UButton icon="i-solar-user-bold-duotone" size="sm" variant="soft" class="rounded-full dark:text-white" />
 
           <Button id="carrito">
             Carrito
@@ -41,7 +42,7 @@
     </nav>
   </header>
 
-  <main class="bg-gray-100">
+  <main class="bg-gray-100 dark:bg-alop-950">
     <slot />
   </main>
 </template>
